@@ -1,1 +1,0 @@
-print("Salam i gona to code little gpt")
