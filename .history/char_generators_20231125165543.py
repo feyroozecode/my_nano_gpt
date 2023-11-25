@@ -50,9 +50,7 @@ print("1-> AFTER ENCODE => the new encoded is ", encode_str)
 decoded_str = decode(encode_str)
 print("2-> FINAL DECODE IT => the text is =", decoded_str)
 
-# torch 
+#
 data = torch.tensor(encode(my_text), dtype=torch.long)
 
-print(data.shape, data.dtype)
-
-print(data[:1000])
+print(data.shape.dtype)

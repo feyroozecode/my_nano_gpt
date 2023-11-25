@@ -55,4 +55,4 @@ data = torch.tensor(encode(my_text), dtype=torch.long)
 
 print(data.shape, data.dtype)
 
-print(data[:1000])
+print(data[:])
