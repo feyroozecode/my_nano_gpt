@@ -1,0 +1,2 @@
+# my_nano_gpt
+A Nano Gpt model based on Andrej karpathy courses 
