@@ -82,9 +82,7 @@ train_data[:block_size+1]   # 8 inputs => char + 1 target]
 print("tensor block size : ", train_data[:block_size+1])
 
 # now lets train the data target when is gived context
-# x is the input(context)
-# y is the target 
-# loop it in range of block_size and show the context and the target 
+# x is the input
 x = train_data[:block_size]
 y = train_data[:block_size+1]
 for t in range(block_size):

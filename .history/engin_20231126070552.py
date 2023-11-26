@@ -72,22 +72,4 @@ print("tensored data left then 1000 only ",data[:1000])
 
 # Lets now split up the data into train and validation sets
 net1 = int(0.9 * len(data)) # first 90% will be train , rest => val
-train_data = data[:net1]    # data to train is 90% of total datas
-
-val_data = data[net1:]      # data to val is 10% of total datas
-
-block_size = 8              # 8 digit chararacter(corresponfing to the vocab digit values) will be train to get 1 target next
-
-train_data[:block_size+1]   # 8 inputs => char + 1 target]
-print("tensor block size : ", train_data[:block_size+1])
-
-# now lets train the data target when is gived context
-# x is the input(context)
-# y is the target 
-# loop it in range of block_size and show the context and the target 
-x = train_data[:block_size]
-y = train_data[:block_size+1]
-for t in range(block_size):
-    context = x[:t+1]
-    target = y[t]
-    print(f"when input is {context} the target : {target}")
+train_data = data[:net1]    # data to train 
