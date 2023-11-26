@@ -1,21 +1,12 @@
 import tiktoken
 # Pakcage for converting tokenize a chars 
 import torch    
-#
 
+# start 
 enc = tiktoken.get_encoding("gpt2")             # encoding type 
 print(enc.n_vocab)
 
 # encode a text
-my_text = """
-    Salam Aleykoum bonjour monsieur ali, Ceci est un texte de test
-    Ce texte est ecrit juste pour tester la froce des LLM comme chatGpt
-    Et aussi pour apprendre comment developer un nano-gpt(petit reseau de GPT) baser sur gpt2 
-    Ce programme utilise tiktoken un paquet OpenSource developper par OpenAI pour tokenizer notre texte
-    La tokenisation cinsiste a encoder notre texte et l'enumer avec des nombre pour etre plus facile a manipuler et predire le mot suivant .etc..
-    Nous utilisons aussi pyTorch une des meilleur bibliotheque python pour entrainer nos donnees sur des large ndodel de langage.
-    Ce programme est a titre experimentatle  il est developper en utilisant le langage python. 
-    """
 encoded_txt = enc.encode(my_text)
 
 print("Encoded text is : ", encoded_txt)
