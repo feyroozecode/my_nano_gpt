@@ -128,8 +128,7 @@ for b in range(batch_size): # batch dimension
 
 
 # -----
-from bigran_lm import BigramLanguageModel
-
+import Bigram
 print(" -- Using NN with Birgram Language Model -- ")
 
 model = BigramLanguageModel(chars_vocab_size)
